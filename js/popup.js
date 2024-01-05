@@ -220,7 +220,8 @@ function createAccordionList(cks, callback, callbackArguments) {
     try {
         $("#cookiesList").accordion("destroy");
     } catch (e) {
-        console.warn(e.message)
+        // Accordion not yet created
+        // console.warn(e.message)
     }
 
     if (cks === null)

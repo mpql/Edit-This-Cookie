@@ -1,5 +1,3 @@
-var canvasLoader;
-
 Array.prototype.toTop = function (a) {
     var c;
     if (a <= 0 || a >= this.length) {
@@ -179,6 +177,11 @@ function isChristmasPeriod() {
     var isMidDecember = (nowDate.getMonth() === 11 && nowDate.getDate() > 5);
     var isStartJanuary = (nowDate.getMonth() === 0 && nowDate.getDate() <= 6);
     return isMidDecember || isStartJanuary;
+}
+
+function isHalloweenPeriod() {
+    var nowDate = new Date();
+    return (nowDate.getMonth() === 9 && nowDate.getDate() > 27);
 }
 
 function setLoaderVisible(visible) {
